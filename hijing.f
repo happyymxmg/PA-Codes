@@ -6085,7 +6085,7 @@ C  *****************************************
       F(1,1)=((UPV+USEA)*ABS(IHNT2(2))+(DNV+DSEA)*
      &       (IHNT2(1)-ABS(IHNT2(2))))/IHNT2(1)
       F(1,2)=USEA
-      F(1,3)=((DNV+DSEA)*ABS(IHNT2(2))+(UNV+USEA)*
+      F(1,3)=((DNV+DSEA)*ABS(IHNT2(2))+(UPV+USEA)*
      &       (IHNT2(1)-ABS(IHNT2(2))))/IHNT2(1)
       F(1,4)=DSEA
       F(1,5)=STR
@@ -6103,7 +6103,7 @@ C  *****************************************
       F(2,1)=((UPV+USEA)*ABS(IHNT2(4))+(DNV+DSEA)*
      &       (IHNT2(3)-ABS(IHNT2(4))))/IHNT2(3)
       F(2,2)=USEA
-      F(2,3)=((DNV+DSEA)*ABS(IHNT2(4))+(UNV+USEA)*
+      F(2,3)=((DNV+DSEA)*ABS(IHNT2(4))+(UPV+USEA)*
      &       (IHNT2(3)-ABS(IHNT2(4))))/IHNT2(3)
       F(2,4)=DSEA
       F(2,5)=STR
@@ -6148,9 +6148,9 @@ c**********Li & Wang, nucl-th/0110075, as nuclear effect
             RGX=RGX*(1.0-1.5*X2**0.35)*EXP(-X2**2/0.004)            
            ELSE
            ENDIF
-           F(1,7)=RGX*F(1,7)
+           F(2,7)=RGX*F(2,7)
            DO 500 I=1,6
-            F(1,I)=RQX*F(1,I)
+            F(2,I)=RQX*F(2,I)
  500       CONTINUE
         ENDIF
 C*****************************************************************
