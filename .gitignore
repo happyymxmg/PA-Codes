@@ -1,0 +1,14 @@
+#Ignore Directories
+/data
+#/backup
+/others
+
+#Ignore all the executable file, libraries and output files
+*.tar
+*.tgz
+*.7z
+*.dat
+*.a
+
+#Ignore specific files
+#.gitignore
