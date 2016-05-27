@@ -1,2 +1,9 @@
 This directory is set to store lastest complete different version HIJING programs.
 And the specific functional version HIJING programs.
+
+1.hijing2.554_DHC_onceISR.f
+
+In this version, we modified the HIJING with Q-shadowing, decoherent effect by
+modifying the gluons in ISR of a hard process.
+We just keep the gluons in the last hard process's ISR. Put the former ISR gluons
+back into its nucleon to compensate the collision energy for current hard collision.
